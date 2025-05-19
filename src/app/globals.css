@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic body styling for a smooth scroll experience */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-bg-light text-brand-font-darkest antialiased;
+  /* antialiased for smoother fonts */
+}
+
+/* Example of a global link style (optional, Tailwind classes can handle this too) */
+/* a {
+  @apply text-brand-font-medium hover:text-brand-font-dark transition-colors duration-150;
+} */
+
+/* Custom scrollbar (optional, for a more modern feel - webkit only) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #155263; /* brand-font-dark */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0c2f39; /* brand-font-darkest */
+}
